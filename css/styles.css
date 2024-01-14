@@ -52,6 +52,16 @@ a:hover {
   margin-bottom: 25px;
 }
 /* mobile */
+@media (max-width: 750px) {
+  .logo {
+  width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .logo {
+  width: 50%;
+  }
+}
 @media (max-width: 500px) {
   .logo {
   width: 60%;
@@ -66,6 +76,21 @@ a:hover {
   width:100px;
   right:100px;
   bottom:50px;
+}
+/* mobile */
+@media (max-width: 550px) {
+  .wheel {
+  position: relative;
+  left: 5%;
+  top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .wheel {
+  position: relative;
+  left: 8%;
+  top: 30px;
+  }
 }
 
 video {
