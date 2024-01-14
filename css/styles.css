@@ -5,27 +5,51 @@ html {
 }
 
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
-  font-weight: 400;
-  font-family: "abril-display", serif;
+  font-family: abril-text, serif;
+  font-weight: 300;
   font-style: normal;
   color: #231F20;
     -webkit-transition: all 0.5s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
           transition: all 0.5s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */ }
 
-p.action-text{
-  padding-top:10px;
-  font-size: .9em;
-  font-family: "interstate", sans-serif;
+.container, .wheel {z-index: 1;}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  font-weight: 400; }
+h1 { font-size: 4rem; line-height: 1.2; letter-spacing: .05rem; }
+h2 { font-size: 2rem; line-height: 1.5; letter-spacing: 0rem; }
+h3 { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0; }
+h4 { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0; }
+h5 { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0; }
+h6 { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0; }
+p { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0; }
+
+a {
+  font-size: 1.2rem; 
+  font-family: interstate, serif;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
   line-height: 1.8;
-}
+  color: #F16028;
+  text-decoration: none;
+  border-bottom: 1.5px solid #F16028;
+   -webkit-transition: all 0.2s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.2s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
+  }
+
+a:hover {
+  color: #BF4D21;
+  text-decoration: none;
+  border-bottom: 1.5px solid #BF4D21;
+  }
 
 .logo {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 /* mobile */
 @media (max-width: 500px) {
@@ -33,16 +57,22 @@ p.action-text{
   width: 60%;
   }
 }
+.main{
+  margin-top: 15%;
+}
 
-a {
-  color: #F16028;
-  text-decoration: none;
-  border-bottom: 1.5px solid #F16028;
-   -webkit-transition: all 0.2s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
-          transition: all 0.2s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */
-  }
-a:hover {
-  color: #BF4D21;
-  text-decoration: none;
-  border-bottom: 1.5px solid #BF4D21; 
-  }
+.wheel{
+  position: fixed;
+  width:100px;
+  right:100px;
+  bottom:50px;
+}
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
