@@ -100,7 +100,7 @@ a:hover {
 
 .wheel{
   position: fixed;
-  width:130px;
+  width:100px;
   right:100px;
   bottom:50px;
 }
