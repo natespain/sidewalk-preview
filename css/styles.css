@@ -14,6 +14,10 @@ body {
     -webkit-transition: all 0.5s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
           transition: all 0.5s ease-out;  /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */ }
 
+img{
+  max-width: 130%;
+}
+
 .container, .wheel {z-index: 1;}
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,9 +29,11 @@ h1 { font-size: 4rem; line-height: 1.2; letter-spacing: .05rem; }
 @media (max-width: 420px) {
   h1 { font-size: 3.8rem; line-height: 1.2; letter-spacing: .05rem; }
 }
+
 @media (max-width: 380px) {
   h1 { font-size: 4rem; line-height: 1.2; letter-spacing: .05rem; }
 }
+
 h2 { font-size: 2rem; line-height: 1.5; letter-spacing: 0rem; }
 h3 { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0; }
 h4 { font-size: 1.5rem; line-height: 1.5; letter-spacing: 0; }
@@ -55,35 +61,50 @@ a:hover {
   border-bottom: 1.5px solid #BF4D21;
   }
 
+.names{
+  margin-top: 20px;
+}
+
+@media (max-width: 550px) {
+  .names {
+  width: 50%;
+  }
+}
+
 .logo {
   margin-bottom: 25px;
 }
+
 /* mobile */
 @media (max-width: 750px) {
   .logo {
   width: 100%;
   }
 }
+
 @media (max-width: 550px) {
   .logo {
   width: 50%;
   }
 }
+
 @media (max-width: 500px) {
   .logo {
   width: 60%;
   }
 }
+
 .main{
   margin-top: 15%;
 }
 
 .wheel{
   position: fixed;
-  width:100px;
+  width:75px;
   right:100px;
   bottom:50px;
 }
+
 /* mobile */
 @media (max-width: 550px) {
   .wheel {
@@ -92,6 +113,7 @@ a:hover {
   top: 30px;
   }
 }
+
 @media (max-width: 600px) {
   .wheel {
   position: relative;
