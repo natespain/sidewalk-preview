@@ -1,1 +1,0 @@
-This is the maintenance page for Sidewalk.
