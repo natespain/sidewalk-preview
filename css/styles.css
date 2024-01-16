@@ -101,6 +101,7 @@ a:hover {
 .wheel{
   position: fixed;
   width:130px;
+  height:130px;
   right:100px;
   bottom:50px;
   -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
@@ -109,7 +110,7 @@ a:hover {
 
 .wheel:hover{
   transform: rotateZ(180deg);
-  transform-origin: 50% 48%;
+  transform-origin: 63.7px 65.5px;
 }
 
 /* mobile */
